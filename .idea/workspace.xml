@@ -4,14 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30aa769-26f3-4c6e-a492-362b24125c86" name="Changes" comment="" />
+    <list default="true" id="f30aa769-26f3-4c6e-a492-362b24125c86" name="Changes" comment="Add structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightBuilderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightBuilderService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Y7YzeTr5UGp24VkIsCZH8sGyUY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -22,9 +40,29 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "last_opened_file_path": "C:/Users/Маргарита/IdeaProjects/Flight_filtering_module-master",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="flight_builder_test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="flight_builder_test" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -33,7 +71,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699878350237</updated>
+      <workItem from="1699878351832" duration="10756000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add structure" />
   </component>
 </project>
