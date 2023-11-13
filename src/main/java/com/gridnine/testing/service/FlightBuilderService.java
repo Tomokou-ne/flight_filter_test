@@ -3,12 +3,16 @@ package com.gridnine.testing.service;
 import com.gridnine.testing.model.Flight;
 import com.gridnine.testing.model.Segment;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class FlightBuilderService {
 
@@ -68,7 +72,7 @@ public class FlightBuilderService {
     }
 
     public void filterSumTimeOnGroundMoreThanTwoHours(List<Flight> flights) {
-        Set<Flight> resultSet = new HashSet<>();
+        Set<Flight> resultSet = new HashSet<>(flights);
         List<Segment> split = new ArrayList<>();
         for (Flight flight : flights ) {
             split.addAll(flight.getSegments());
@@ -78,7 +82,7 @@ public class FlightBuilderService {
                     LocalDateTime departureTime = split.remove(1).getDepartureDate();
                     if(arrivalTime.plusHours(2).isAfter(departureTime)) {
                         showCorrectArrivalFlight(flight, arrivalTime, departureTime);
-                        resultSet.add(flight);
+                        resultSet.remove(flight);
                     }
                 }
             }
