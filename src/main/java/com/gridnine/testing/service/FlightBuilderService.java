@@ -39,7 +39,7 @@ public class FlightBuilderService {
             while (split.size() > 0) {
                 LocalDateTime departureTime = split.get(0).getDepartureDate();
                 LocalDateTime arrivalTime = split.remove(0).getArrivalDate();
-                if(departureTime.isBefore(timeNow)) {
+                if(departureTime.isAfter(timeNow)) {
                     showCorrectDepartureFlight(flight, departureTime, arrivalTime);
                     resultSet.add(flight);
                 }
@@ -48,7 +48,7 @@ public class FlightBuilderService {
         }
     }
 
-    public void filterArrivalBeforeDeparture(List<Flight> flights) {
+    public Set<Flight> filterArrivalBeforeDeparture(List<Flight> flights) {
         Set<Flight> resultSet = new HashSet<>();
         List<Segment> split = new ArrayList<>();
         for (Flight flight : flights ) {
@@ -57,13 +57,14 @@ public class FlightBuilderService {
             while (split.size() > 0) {
                 LocalDateTime departureTime = (split.get(0).getDepartureDate());
                 LocalDateTime arrivalTime = (split.remove(0).getArrivalDate());
-                if(departureTime.isAfter(arrivalTime)) {
+                if(arrivalTime.isAfter(departureTime)) {
                     showCorrectDepartureFlight(flight, departureTime, arrivalTime);
                     resultSet.add(flight);
                 }
             }
 
         }
+        return resultSet;
     }
 
     public void filterSumTimeOnGroundMoreThanTwoHours(List<Flight> flights) {
@@ -73,9 +74,9 @@ public class FlightBuilderService {
             split.addAll(flight.getSegments());
             if (split.size() > 2) {
                 while (split.size() > 2) {
-                    LocalDateTime arrivalTime = split.remove(1).getArrivalDate();
+                    LocalDateTime arrivalTime = split.remove(0).getArrivalDate();
                     LocalDateTime departureTime = split.remove(1).getDepartureDate();
-                    if(departureTime.isAfter(arrivalTime.plusHours(2))) {
+                    if(arrivalTime.plusHours(2).isAfter(departureTime)) {
                         showCorrectArrivalFlight(flight, arrivalTime, departureTime);
                         resultSet.add(flight);
                     }

@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f30aa769-26f3-4c6e-a492-362b24125c86" name="Changes" comment="Add structure">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/gridnine/testing/FlightBuilderServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/FlightBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/model/Segment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightBuilderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gridnine/testing/service/FlightBuilderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +46,54 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="FlightBuilderServiceTest.getArrivalDateLessDepartureDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flight_builder_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.FlightBuilderServiceTest" />
+      <option name="METHOD_NAME" value="getArrivalDateLessDepartureDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightBuilderServiceTest.getDepartureDateEarlierThanTimeNow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flight_builder_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.FlightBuilderServiceTest" />
+      <option name="METHOD_NAME" value="getDepartureDateEarlierThanTimeNow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightBuilderServiceTest.getFlightsWithoutTwoHoursOnTheGround" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="flight_builder_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gridnine.testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gridnine.testing" />
+      <option name="MAIN_CLASS_NAME" value="com.gridnine.testing.FlightBuilderServiceTest" />
+      <option name="METHOD_NAME" value="getFlightsWithoutTwoHoursOnTheGround" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="flight_builder_test" />
       <method v="2">
@@ -62,6 +107,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FlightBuilderServiceTest.getFlightsWithoutTwoHoursOnTheGround" />
+        <item itemvalue="JUnit.FlightBuilderServiceTest.getDepartureDateEarlierThanTimeNow" />
+        <item itemvalue="JUnit.FlightBuilderServiceTest.getArrivalDateLessDepartureDate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,8 +123,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699878350237</updated>
-      <workItem from="1699878351832" duration="10756000" />
+      <workItem from="1699878351832" duration="13190000" />
     </task>
+    <task id="LOCAL-00001" summary="Add structure">
+      <created>1699894184969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699894184969</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
